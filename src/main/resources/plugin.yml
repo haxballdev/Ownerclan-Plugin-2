@@ -1,0 +1,25 @@
+name: OwnerClanPlugin
+version: '${project.version}'
+main: com.cuticu.ownerclan.OwnerClanPlugin
+api-version: '26.2'
+author: Cuticu098
+description: Owner access, custom chat tags (incl. rainbow) and a full clan system with Discord webhook integration.
+
+commands:
+  tag:
+    description: Manage custom chat tags for players.
+    usage: /tag <set|remove|list> ...
+  clan:
+    description: Manage clans.
+    usage: /clan <create|disband|invite|accept|deny|leave|kick|tag|promote|demote|perm|info|list|top> ...
+
+permissions:
+  ownerclan.owner:
+    description: Full access, automatically granted to the configured owner account.
+    default: false
+  ownerclan.tag.set:
+    description: Allows setting a chat tag on any player.
+    default: op
+  ownerclan.clan.admin:
+    description: Allows bypassing clan role restrictions.
+    default: op

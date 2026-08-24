@@ -1,0 +1,27 @@
+# ============================================
+#  OwnerClanPlugin - configuracion
+# ============================================
+
+# Nombre EXACTO de la cuenta que recibira acceso total (op automatico al entrar).
+owner-name: "Cuticu098"
+
+# Prefijo mostrado delante del nombre del owner en el chat, y su color.
+# color puede ser: un color con nombre (red, gold, aqua, green, light_purple, yellow...),
+# un hexadecimal (#FF00AA) o "rainbow" para arcoiris.
+owner-tag:
+  text: "[OWNER]"
+  color: "rainbow"
+
+# Webhooks de Discord
+webhooks:
+  # Noticias publicas: creacion/disolucion de clanes, ranking de kills, etc.
+  news: "https://discord.com/api/webhooks/1541403184176824401/JOFDy80LhyM9YoLlFD7AkERxGMZ-4YDFRneObfEEGzthPbHj4hS9zNq71a0GwnFiXp4j"
+  # Logs privados: acciones de administracion (tags, permisos, expulsiones de clan, etc.)
+  logs: "https://discord.com/api/webhooks/1541403328573874196/NB0-WONBWYpRnTtSIo8BaNyX6R1tB-P80_N2Tfs7ahOQboqZ3POFTIEnyTl-ToBqTeRp"
+
+# Cada cuantos minutos se envia el ranking de clanes por kills al webhook de noticias.
+# Pon 0 para desactivar el ranking automatico.
+leaderboard-interval-minutes: 30
+
+# Cuantos clanes se muestran en el ranking.
+leaderboard-size: 5
