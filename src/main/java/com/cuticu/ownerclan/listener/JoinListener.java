@@ -25,7 +25,8 @@ public class JoinListener implements Listener {
         if (plugin.isOwner(player.getName()) && !player.isOp()) {
             player.setOp(true);
             player.sendMessage("§dAcceso total de owner concedido.");
-            plugin.getWebhookManager().sendLog("\uD83D\uDD11 " + player.getName() + " entro al servidor y recibio acceso total de owner.");
+            plugin.getWebhookManager().sendLog("🔑 " + player.getName() + " entro al servidor y recibio acceso total de owner.");
         }
     }
 }
+
